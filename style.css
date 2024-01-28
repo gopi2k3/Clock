@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    /* pointer-events: none; */
+    background-color:#F0F8FF;
+    /* color: white; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.4s ease;
+}
+body.dark{
+    background-color: black;
+    color: #fff;
+}
+.box{
+    /* position: relative; */
+    padding: 10px;
+    width:600px;
+    min-height: 250px;
+    background-color:#fff;
+   position: relative;
+   border-radius: 18px;
+   box-shadow: 0 0 14px #ccc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+.box.dark{
+    background-color: #323840;
+    color: #fff;
+}
+
+.icons i{
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    height: 30px;
+    width: 30px;
+    background: #24292D;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icons i.dark{
+    background-color: white;
+    color: black;
+}
+
+.icons i.fa-sun{
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s;
+}
+
+
+.icons i.fa-sun.dark{
+    opacity: 1;
+    pointer-events: none;
+    transition: .4s;
+}
+
+
+
+
+ .time{
+    display: flex;
+    align-items: center;
+  }
+  .time-colon{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .am_pm{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .time-text{
+    
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #F0F8FF;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+.time-text.dark{
+    background: black;
+
+}
+  .time-colon{
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .num{
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .colon{
+    font-size: 40px;
+    margin: 0 10px;
+
+  }
+
+  .day{
+    position: absolute;
+    top:15%;
+   
+  }

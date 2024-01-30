@@ -23,7 +23,7 @@ icon.addEventListener('click',()=>{
     })
 })
 
-
+let title=false
 
 
 setInterval(()=>{
@@ -58,6 +58,13 @@ setInterval(()=>{
     document.querySelector('.day').textContent=day[days]
 
 
-
+   
 
 },1000)
+
+
+setInterval(()=>{
+    document.title=title? 'Digital Clock':'Made by Gopi'
+
+    title=!title
+},2000)
